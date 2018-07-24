@@ -97,6 +97,7 @@ section code {
     margin: 2rem;
     padding: 2rem;
     white-space: pre-wrap;
+    line-height: 1.8rem;
 }
 
 @media (min-width:700px) {
