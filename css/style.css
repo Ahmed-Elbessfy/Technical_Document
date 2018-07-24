@@ -18,8 +18,8 @@ html {
 }
 
 body {
-    /* background-color: var(--bg);
-    color: var(--cl); */
+    background-color: var(--bg);
+    color: var(--cl);
 }
 
 header {
