@@ -80,7 +80,8 @@ section li {
     text-align: left;
     text-indent: 2rem;
     margin: 1.5rem auto;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
+    font-weight: 600;
     width: 80%;
     max-width: 50rem;
 }
