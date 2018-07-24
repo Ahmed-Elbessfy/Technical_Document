@@ -1,0 +1,115 @@
+:root {
+    --cl: hsl(246, 50%, 15%);
+    --bg: hsl(60, 58%, 99%);
+    --nav-bg: hsl(145, 20%, 80%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 11px;
+    /* font-family: raleway, "Montserrat Alternates", sans-serif; */
+    text-align: center;
+}
+
+body {
+    /* background-color: var(--bg);
+    color: var(--cl); */
+}
+
+header {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    border-bottom: 2px solid var(--cl);
+}
+
+nav {
+    width: 100%;
+    background-color: var(--nav-bg);
+    color: var(--cl);
+    padding: 1rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-gap: 1.2rem;
+}
+
+nav li {
+    list-style: none;
+    border-bottom: 1px solid var(--bg);
+    border-right: 1px solid var(--cl);
+    border-left: 1px solid var(--cl);
+    width: 100%;
+    padding: 0.4rem;
+}
+
+nav li a.nav-link {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--cl);
+    text-transform: capitalize;
+}
+
+main {
+    color: var(--cl);
+    background-color: var(--bg);
+    padding: 2.4rem;
+}
+
+section {
+    text-align: left;
+    padding-top: 1rem;
+}
+
+section ul {
+    padding-left: 3.4rem;
+}
+
+section p,
+section li {
+    font-size: 1.2rem;
+    text-align: left;
+    text-indent: 2rem;
+    margin: 1.5rem auto;
+    line-height: 1.7rem;
+    width: 80%;
+    max-width: 50rem;
+}
+
+section li {
+    text-indent: 0;
+    line-height: 0%;
+}
+
+section code {
+    display: block;
+    background-color: hsl(0, 0%, 95%);
+    margin: 2rem;
+    padding: 2rem;
+    white-space: pre-wrap;
+}
+
+@media (min-width:700px) {
+    nav {
+        position: fixed;
+        height: 100%;
+        width: 20rem;
+    }
+    main {
+        padding-left: 21rem;
+    }
+    section p,
+    section li {
+        margin: 1.5rem 2rem;
+        max-width: 80rem;
+    }
+}
